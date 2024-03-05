@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
-.main{
+.body {
+    background-color: green;
+}
+
+.main {
     width: 700px;
     border-radius: 15px;
-    background-color: #01579b;
+    background-color: rgb(226, 149, 8);
     justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-color: green;
 }
 
-.header{
+.header {
     background-color: #424242;
     color: whitesmoke;
     padding: 10px;
@@ -20,7 +25,7 @@
     font-family: 'Recursive', sans-serif;
 }
 
-.day{
+.day {
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
@@ -28,26 +33,26 @@
     font-weight: 600;
 }
 
-.temp{
+.temp {
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
 }
 
-.sunrise-sunset{
+.sunrise-sunset {
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 
-.description{
+.description {
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
@@ -55,18 +60,30 @@
     font-weight: 600;
 }
 
-.button{
+.button {
     width: 35px;
     height: 35px;
 }
 
-.top{
+.top {
     height: 60px;
     background-color: #424242;
     color: whitesmoke;
     padding: 10px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     font-family: 'Recursive', sans-serif;
     display: flex;
     justify-content: space-between;
+}
+
+.loading-word {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
 }

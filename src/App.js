@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { env } from './env';
 import Weather from '../src/components/Weather';
+import Loading from './components/Loading';
 
 const Main = () => {
     const [lat, setLat] = useState(null);
@@ -38,7 +39,7 @@ const Main = () => {
     return (
         <div className="App">
             {loading ? (
-                <div>Loading...</div>
+                <Loading />
             ) : (
                 (typeof data?.main !== 'undefined') ? (
                     <Weather weatherData={data} />
